@@ -1,0 +1,13 @@
+html, body { margin: 0; width: 1920px; height: 1080px; background: #101418; color: #e8edf2; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+#bar { height: 90px; line-height: 90px; padding: 0 60px; background: #1b222a; font-size: 30px; }
+#title { font-weight: bold; margin-right: 40px; }
+#count { color: #8fb4d9; margin-right: 40px; }
+#hint { color: #8a97a3; font-size: 24px; }
+#list { padding: 10px 40px 0; }
+.row { height: 56px; line-height: 56px; font-size: 28px; padding: 0 20px; white-space: nowrap; overflow: hidden; border-left: 8px solid transparent; }
+.row .nm { display: inline-block; width: 620px; overflow: hidden; vertical-align: top; }
+.row .id { display: inline-block; width: 760px; overflow: hidden; vertical-align: top; color: #9bb2c7; }
+.row .sh { display: inline-block; width: 140px; vertical-align: top; color: #6f7d8a; }
+.row.sel { background: #2a5d9f; border-left-color: #ffffff; }
+.row.sel .id, .row.sel .sh { color: #ffffff; }
+#status { position: absolute; left: 0; right: 0; bottom: 0; height: 70px; line-height: 70px; padding: 0 60px; background: #1b222a; font-size: 26px; color: #ffd37a; }

@@ -1,0 +1,298 @@
+diff --git a/app/assets/icons/hdmi1.svg b/app/assets/icons/hdmi1.svg
+new file mode 100644
+index 0000000..b9c76c7
+--- /dev/null
++++ b/app/assets/icons/hdmi1.svg
+@@ -0,0 +1 @@
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><title>HDMI 1</title><path d="M3 4h18v10l-3 5H6l-3-5Z"/><path d="m10.5 9.5 2-1.5v8"/></svg>
+diff --git a/app/assets/icons/hdmi2.svg b/app/assets/icons/hdmi2.svg
+new file mode 100644
+index 0000000..cba9d91
+--- /dev/null
++++ b/app/assets/icons/hdmi2.svg
+@@ -0,0 +1 @@
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><title>HDMI 2</title><path d="M3 4h18v10l-3 5H6l-3-5Z"/><path d="M9.9 9.3a2.2 2.2 0 0 1 4.2.7c0 1.7-2.2 2.6-4.2 5.5h4.4"/></svg>
+diff --git a/app/assets/icons/hdmi3.svg b/app/assets/icons/hdmi3.svg
+new file mode 100644
+index 0000000..f0587b6
+--- /dev/null
++++ b/app/assets/icons/hdmi3.svg
+@@ -0,0 +1 @@
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><title>HDMI 3</title><path d="M3 4h18v10l-3 5H6l-3-5Z"/><path d="M10 8.2h4l-2.4 3a2.2 2.2 0 1 1-1.7 3.9"/></svg>
+diff --git a/app/assets/icons/livetv.svg b/app/assets/icons/livetv.svg
+new file mode 100644
+index 0000000..543ec8b
+--- /dev/null
++++ b/app/assets/icons/livetv.svg
+@@ -0,0 +1 @@
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><title>Live TV</title><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="m8 3 4 4 4-4"/></svg>
+diff --git a/app/assets/icons/metrics.js b/app/assets/icons/metrics.js
+index 4c93691..4bb4381 100644
+--- a/app/assets/icons/metrics.js
++++ b/app/assets/icons/metrics.js
+@@ -1,2 +1,2 @@
+ /* Visible SVG ink measured at build time. */
+-window.FrameIconMetrics = {"abciview":{"n":240,"x":20,"y":45,"w":200,"h":150,"fill":0.7461133333333302},"applemusic":{"n":240,"x":25,"y":3,"w":182,"h":232,"fill":0.37128925840893395},"appletv":{"n":240,"x":0,"y":61,"w":240,"h":118,"fill":0.4205099977844237},"apps":{"n":240,"x":22,"y":22,"w":196,"h":196,"fill":0.4230014454761501},"art":{"n":240,"x":22,"y":22,"w":196,"h":196,"fill":0.4207371724199869},"disneyplus":{"n":240,"x":20,"y":28,"w":200,"h":184,"fill":0.26397303921568593},"hbomax":{"n":240,"x":0,"y":87,"w":240,"h":66,"fill":0.6134454842543072},"home":{"n":240,"x":22,"y":22,"w":196,"h":196,"fill":0.3167231178185559},"netflix":{"n":240,"x":54,"y":0,"w":132,"h":240,"fill":0.8215344622697586},"primevideo":{"n":240,"x":4,"y":91,"w":230,"h":55,"fill":0.2938401922033634},"sbs":{"n":240,"x":41,"y":0,"w":158,"h":240,"fill":0.4446042235459586},"settings":{"n":240,"x":12,"y":22,"w":216,"h":196,"fill":0.33975479080521065},"spotify":{"n":240,"x":0,"y":0,"w":240,"h":240,"fill":0.6418556644880171},"stremio":{"n":240,"x":0,"y":0,"w":240,"h":240,"fill":0.4901008306100203},"tubi":{"n":240,"x":0,"y":85,"w":240,"h":70,"fill":0.6370606909430396},"youtube":{"n":240,"x":0,"y":35,"w":240,"h":170,"fill":0.8811455209534805}};
++window.FrameIconMetrics = {"abciview":{"n":240,"x":20,"y":45,"w":200,"h":150,"fill":0.7461133333333302},"applemusic":{"n":240,"x":25,"y":3,"w":182,"h":232,"fill":0.37128925840893395},"appletv":{"n":240,"x":0,"y":61,"w":240,"h":118,"fill":0.4205099977844237},"apps":{"n":240,"x":22,"y":22,"w":196,"h":196,"fill":0.4230014454761501},"art":{"n":240,"x":22,"y":22,"w":196,"h":196,"fill":0.4207371724199869},"disneyplus":{"n":240,"x":20,"y":28,"w":200,"h":184,"fill":0.26397303921568593},"hbomax":{"n":240,"x":0,"y":87,"w":240,"h":66,"fill":0.6134454842543072},"hdmi1":{"n":240,"x":22,"y":32,"w":196,"h":166,"fill":0.35816471166780084},"hdmi2":{"n":240,"x":22,"y":32,"w":196,"h":166,"fill":0.39128759937710145},"hdmi3":{"n":240,"x":22,"y":32,"w":196,"h":166,"fill":0.3836059725094871},"home":{"n":240,"x":22,"y":22,"w":196,"h":196,"fill":0.3167231178185559},"livetv":{"n":240,"x":22,"y":22,"w":196,"h":186,"fill":0.2975891431841551},"netflix":{"n":240,"x":54,"y":0,"w":132,"h":240,"fill":0.8215344622697586},"primevideo":{"n":240,"x":4,"y":91,"w":230,"h":55,"fill":0.2938401922033634},"sbs":{"n":240,"x":41,"y":0,"w":158,"h":240,"fill":0.4446042235459586},"settings":{"n":240,"x":12,"y":22,"w":216,"h":196,"fill":0.33975479080521065},"spotify":{"n":240,"x":0,"y":0,"w":240,"h":240,"fill":0.6418556644880171},"stremio":{"n":240,"x":0,"y":0,"w":240,"h":240,"fill":0.4901008306100203},"tubi":{"n":240,"x":0,"y":85,"w":240,"h":70,"fill":0.6370606909430396},"youtube":{"n":240,"x":0,"y":35,"w":240,"h":170,"fill":0.8811455209534805}};
+diff --git a/app/device.js b/app/device.js
+index 31a0be9..ab87ee7 100644
+--- a/app/device.js
++++ b/app/device.js
+@@ -2,8 +2,7 @@
+ (function () {
+   'use strict';
+   var IDS = {
+-    stremio: 'IkWsFHtOY9.Stremio', netflix: 'org.tizen.netflix-app',
+-    disneyplus: 'MCmYXNxgcu.DisneyPlus', youtube: '9Ur5IzDKqV.TizenYouTube',
++    youtube: '9Ur5IzDKqV.TizenYouTube',
+     appletv: 'com.samsung.tv.aria-video', primevideo: 'org.tizen.primevideo',
+     abciview: 'mWK87Xghap.ABCiview', sbs: 'OyE7OuxlUi.SBSOnDemand',
+     applemusic: 'org.tizen.apple.apple-music'
+@@ -15,6 +14,8 @@
+   var EXTRA_BRANDS = {'rJeHak5zRg.Spotify': 'spotify', '5b8c3eb16b.BeamCTVDev': 'hbomax', '3KA0pm7a7V.TubiTV': 'tubi'};
+   var INTERNAL = ['adplatform.ADPlayer', 'WykOS4t4F0.cmsWebApp', '25emanual3.emanual',
+     'ZODRT12q2l.WebAccountExtension', 'ByJlgt0XeD.CastSettingsApp', 'tv6pbVMQFF.PrivacyChoices'];
++  /* Removed from Home on purpose; never listed by the installed-app scan. */
++  var REMOVED = ['IkWsFHtOY9.Stremio', 'org.tizen.netflix-app', 'MCmYXNxgcu.DisneyPlus'];
+   var SELF = 'nClrkHome1.FrameHome';
+   function api() { return window.tizen && window.tizen.application; }
+   function unavailable(done) {
+@@ -30,6 +31,7 @@
+   }
+   function launchApp(id, done) {
+     if (!api()) { unavailable(done); return; }
++    if (/^TODO\./.test(id)) { done({ message: 'This shortcut is not set up yet.', detail: 'Find its app ID with the idlister test app, then set it in PRIMARY_APPS in main.js.' }); return; }
+     var finish = bounded(done);
+     try { api().launch(id, function () { finish(null); }, function (err) { finish(failure(err)); }); }
+     catch (err) { finish(failure(err)); }
+@@ -59,7 +61,7 @@
+         list.forEach(function (a) {
+           var primary = !!known[a.id], stream = STREAMING.indexOf(a.id) >= 0;
+           var consumer = /^[A-Za-z0-9]{10}\.[A-Za-z0-9_-]+$/.test(a.id) || CONSUMER_SYSTEM.indexOf(a.id) >= 0;
+-          if (a.id === SELF || INTERNAL.indexOf(a.id) >= 0 || seen[a.id] || !a.name || (!primary && !stream && (!a.show || !consumer))) return;
++          if (a.id === SELF || REMOVED.indexOf(a.id) >= 0 || INTERNAL.indexOf(a.id) >= 0 || seen[a.id] || !a.name || (!primary && !stream && (!a.show || !consumer))) return;
+           if (!primary && /(?:service|worker|preview|promotion|plugin|launcher|test|sdk|^ep[ -]|factory|daemon)/i.test(a.name + ' ' + a.id)) return;
+           if (/-dummy$/.test(a.id) || a.id === 'com.samsung.tv.cobalt-yt') return;
+           seen[a.id] = true;
+diff --git a/app/main.js b/app/main.js
+index 4f3b9f8..a699309 100644
+--- a/app/main.js
++++ b/app/main.js
+@@ -13,17 +13,21 @@
+   var KEYS = { 37: 'left', 38: 'up', 39: 'right', 40: 'down', 13: 'ok', 27: 'back', 8: 'back', 10009: 'back', 461: 'back' };
+   var FULL = 'Home holds nine apps. Remove one first.', LAST = 'Home needs one app';
+ 
++  /* Placeholder launch targets for TV inputs. Replace each appId with the real ID found by the
++     idlister test app (see tools/idlister). Until then a press shows the normal launch error. */
+   var PRIMARY_APPS = [
+-    { id: 'stremio', name: 'Stremio', mark: true, appId: 'IkWsFHtOY9.Stremio' },
+-    { id: 'netflix', name: 'Netflix', mark: true, appId: 'org.tizen.netflix-app' },
+-    { id: 'disneyplus', name: 'Disney+', mark: true, appId: 'MCmYXNxgcu.DisneyPlus' },
++    { id: 'livetv', name: 'Live TV', mark: true, appId: 'TODO.livetv' },
++    { id: 'hdmi1', name: 'HDMI 1', mark: true, appId: 'TODO.hdmi1' },
++    { id: 'hdmi2', name: 'HDMI 2', mark: true, appId: 'TODO.hdmi2' },
++    { id: 'hdmi3', name: 'HDMI 3', mark: true, appId: 'TODO.hdmi3' },
+     { id: 'youtube', name: 'YouTube', mark: true, appId: '9Ur5IzDKqV.TizenYouTube' },
+     { id: 'appletv', name: 'Apple TV', mark: true, appId: 'com.samsung.tv.aria-video' },
+     { id: 'primevideo', name: 'Prime Video', mark: true, appId: 'org.tizen.primevideo' },
+     { id: 'abciview', name: 'ABC iview', mark: true, appId: 'mWK87Xghap.ABCiview' },
+-    { id: 'sbs', name: 'SBS On Demand', mark: true, appId: 'OyE7OuxlUi.SBSOnDemand' },
+-    { id: 'applemusic', name: 'Apple Music', mark: true, appId: 'org.tizen.apple.apple-music' }
++    { id: 'sbs', name: 'SBS On Demand', mark: true, appId: 'OyE7OuxlUi.SBSOnDemand' }
+   ];
++  /* Apps removed from Home. Saved preferences and the installed-app scan can never restore these. */
++  var REMOVED = ['stremio', 'netflix', 'disneyplus', 'IkWsFHtOY9.Stremio', 'org.tizen.netflix-app', 'MCmYXNxgcu.DisneyPlus'];
+   var PRIMARY = PRIMARY_APPS.map(function (a) { return a.id; }), APPS = PRIMARY_APPS.slice(), ALPHA = [];
+   var WALLS = window.CleanFrameWallpapers || [{ id: 'misty', name: 'Misty coast', tone: 'light', ut: { tr: 'mist', br: 'mist' }, frostVeil: .20 }];
+   var ADAPTIVE_INK = window.CleanFrameAdaptiveInk || {};
+@@ -330,16 +334,16 @@
+     var s = saved && typeof saved === 'object' ? saved : {}, modern = s.look && typeof s.look === 'object' ? s.look : s;
+     var legacyList = s.theme === 'list', h = [], recent = [], records = Array.isArray(s.appRecords) ? s.appRecords : [];
+     records.slice(0, 256).forEach(function (a) {
+-      if (!a || !safeId(a.id) || !safeId(a.appId) || typeof a.name !== 'string' || !a.name.trim() || app(a.id)) return;
++      if (!a || !safeId(a.id) || !safeId(a.appId) || REMOVED.indexOf(a.id) >= 0 || REMOVED.indexOf(a.appId) >= 0 || typeof a.name !== 'string' || !a.name.trim() || app(a.id)) return;
+       APPS.push({ id: a.id, appId: a.appId, name: a.name.slice(0, 160), brand: ['hbomax', 'spotify', 'tubi'].indexOf(a.brand) >= 0 ? a.brand : '', mark: ['hbomax', 'spotify', 'tubi'].indexOf(a.brand) >= 0, icon: safeIcon(a.icon) });
+     });
+     (Array.isArray(s.home) ? s.home : Array.isArray(s.dock) ? s.dock : []).forEach(function (id) {
+-      if (!safeId(id) || h.indexOf(id) >= 0 || h.length >= CAP) return;
++      if (!safeId(id) || REMOVED.indexOf(id) >= 0 || h.indexOf(id) >= 0 || h.length >= CAP) return;
+       if (!app(id) && id.indexOf('.') > 0) APPS.push({ id: id, appId: id, name: id.split('.').pop(), mark: false });
+       if (app(id)) h.push(id);
+     });
+     if (!h.length) h = PRIMARY.slice();
+-    (Array.isArray(s.recent) ? s.recent : []).forEach(function (id) { if (safeId(id) && app(id) && h.indexOf(id) < 0 && recent.indexOf(id) < 0 && recent.length < 5) recent.push(id); });
++    (Array.isArray(s.recent) ? s.recent : []).forEach(function (id) { if (safeId(id) && REMOVED.indexOf(id) < 0 && app(id) && h.indexOf(id) < 0 && recent.indexOf(id) < 0 && recent.length < 5) recent.push(id); });
+     return {
+       bg: pick(modern.bg, LOOK_VALUES.bg, legacyList ? 'dark' : 'photo'), layout: pick(modern.layout, LOOK_VALUES.layout, legacyList ? 'list' : 'dock'),
+       apps: pick(modern.apps, LOOK_VALUES.apps, legacyList ? 'text' : 'both'), controls: pick(modern.controls, LOOK_VALUES.controls, 'both'),
+@@ -475,7 +479,7 @@
+       ALPHA = [];
+       entries.forEach(function (entry) {
+         var id = PRIMARY.indexOf(entry.brand) >= 0 ? entry.brand : entry.appId, a;
+-        if (!safeId(id) || !safeId(entry.appId) || ALPHA.indexOf(id) >= 0) return;
++        if (!safeId(id) || !safeId(entry.appId) || REMOVED.indexOf(id) >= 0 || REMOVED.indexOf(entry.appId) >= 0 || ALPHA.indexOf(id) >= 0) return;
+         a = app(id);
+         if (!a) { a = { id: id }; APPS.push(a); }
+         a.appId = entry.appId; a.brand = entry.brand || ''; a.mark = !!entry.brand;
+diff --git a/scripts/check.py b/scripts/check.py
+index aded6e6..d832525 100644
+--- a/scripts/check.py
++++ b/scripts/check.py
+@@ -41,6 +41,6 @@ for wall in walls:
+     for suffix in ['study-soft', 'field-blur', 'field-frost', 'field-clear']:
+         assert (app / ('assets/materials/' + wall_id + '-' + suffix + '.jpg')).is_file(), 'Missing registered material: ' + wall_id + '/' + suffix
+     assert (app / ('assets/wallpapers/' + wall_id + '-panel.jpg')).is_file(), 'Missing panel backdrop: ' + wall_id
+-for icon in ['stremio', 'netflix', 'disneyplus', 'youtube', 'appletv', 'primevideo', 'abciview', 'sbs', 'applemusic', 'art', 'apps', 'settings']:
++for icon in ['livetv', 'hdmi1', 'hdmi2', 'hdmi3', 'youtube', 'appletv', 'primevideo', 'abciview', 'sbs', 'applemusic', 'art', 'apps', 'settings']:
+     assert (app / ('assets/icons/' + icon + '.svg')).is_file(), 'Missing icon: ' + icon
+ print('Widget identity, version and bundled resources are valid.')
+diff --git a/tools/idlister/config.xml b/tools/idlister/config.xml
+new file mode 100644
+index 0000000..325c34d
+--- /dev/null
++++ b/tools/idlister/config.xml
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://local.cleantizen/idlister" version="0.1.0" viewmodes="maximized">
++  <!-- Change the 10-character prefix in both id and package to your own before signing. -->
++  <tizen:application id="CtIdList01.IdLister" package="CtIdList01" required_version="5.0"/>
++  <content src="index.html"/>
++  <name>IdLister</name>
++  <icon src="icon.png"/>
++  <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
++  <tizen:profile name="tv-samsung"/>
++  <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
++  <tizen:privilege name="http://tizen.org/privilege/application.info"/>
++  <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
++  <tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
++</widget>
+diff --git a/tools/idlister/icon.png b/tools/idlister/icon.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..69147da8973f8f442c5c696f302d091816148293
+GIT binary patch
+literal 1209
+zcmeAS@N?(olHy`uVBq!ia0y~yU<5K5893O0R7}x|GzJEi22U5qkcv5P?;gyQFc5KZ
+zyq?5!yIy~t!UL;GTLd_24$eM&M>XPJ;IALIp64%k`S=&Z0a?ZdgW-dIyuN<k-0}ME
+z>P7}1hE?mzzcVq;U<iqQ|BjW(fN{mHdw0265|{!?_wE+wIKZ;tRaLpZKm(`4)vxd3
+z6c~gXR=vKv*MUKeA(S=-Z1^wT@Ot-w{Xi=jVu9{i;0?5^g!2GPgC5Y87gQO98Fm4k
+z=P(`U_7_65Q1mSS0FC`fekhwWzNCqt=^VtASm!W<VQ8Zp@`opRnI2d__a3lFV(@hJ
+Kb6Mw<&;$S@Byyzy
+
+literal 0
+HcmV?d00001
+
+diff --git a/tools/idlister/index.html b/tools/idlister/index.html
+new file mode 100644
+index 0000000..7b6146c
+--- /dev/null
++++ b/tools/idlister/index.html
+@@ -0,0 +1,15 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++<meta charset="utf-8">
++<title>IdLister</title>
++<meta name="viewport" content="width=device-width, initial-scale=1">
++<link rel="stylesheet" href="style.css">
++</head>
++<body>
++<div id="bar"><span id="title">IdLister</span><span id="count"></span><span id="hint">Up/Down: select &nbsp; OK: launch &nbsp; Left/Right: page &nbsp; Back: exit</span></div>
++<div id="list"></div>
++<div id="status"></div>
++<script src="main.js"></script>
++</body>
++</html>
+diff --git a/tools/idlister/main.js b/tools/idlister/main.js
+new file mode 100644
+index 0000000..c46d7d9
+--- /dev/null
++++ b/tools/idlister/main.js
+@@ -0,0 +1,69 @@
++/* IdLister: shows every installed app's name and ID on the TV so you can find the IDs for
++   Live TV and the HDMI inputs. Read-only except for the launch you trigger with OK. ES5 only. */
++(function () {
++  'use strict';
++  var ROWS = 14, items = [], sel = 0, top = 0;
++  var listEl = document.getElementById('list'), statusEl = document.getElementById('status'), countEl = document.getElementById('count');
++
++  function say(t) { statusEl.textContent = t || ''; }
++  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
++
++  function render() {
++    var html = '', i, it, end = Math.min(items.length, top + ROWS);
++    for (i = top; i < end; i++) {
++      it = items[i];
++      html += '<div class="row' + (i === sel ? ' sel' : '') + '"><span class="nm">' + esc(it.name || '(no name)') + '</span><span class="id">' + esc(it.id) + '</span><span class="sh">' + (it.show ? 'visible' : 'hidden') + '</span></div>';
++    }
++    listEl.innerHTML = html;
++    countEl.textContent = items.length ? (sel + 1) + ' / ' + items.length : '';
++  }
++
++  function move(d) {
++    if (!items.length) return;
++    sel = Math.max(0, Math.min(items.length - 1, sel + d));
++    if (sel < top) top = sel;
++    if (sel >= top + ROWS) top = sel - ROWS + 1;
++    render();
++  }
++
++  function launch() {
++    var it = items[sel];
++    if (!it) return;
++    say('Launching ' + it.id + ' ...');
++    try {
++      tizen.application.launch(it.id, function () { say('Launch request accepted for ' + it.id); },
++        function (e) { say('Launch failed for ' + it.id + ': ' + (e && (e.message || e.name))); });
++    } catch (e) { say('Launch error: ' + (e && (e.message || e.name))); }
++  }
++
++  function load() {
++    if (!window.tizen || !tizen.application) {
++      say('Not running on a Tizen TV: the tizen API is missing, so no apps can be listed.');
++      return;
++    }
++    say('Reading installed apps ...');
++    tizen.application.getAppsInfo(function (list) {
++      var i;
++      items = [];
++      for (i = 0; i < list.length; i++) items.push({ id: list[i].id, name: list[i].name, show: !!list[i].show });
++      items.sort(function (a, b) { return String(a.name).toLowerCase() < String(b.name).toLowerCase() ? -1 : 1; });
++      say(items.length + ' apps found. Look for Live TV, Source/Input and HDMI entries (hidden ones included).');
++      render();
++    }, function (e) { say('Could not list apps: ' + (e && (e.message || e.name))); });
++  }
++
++  document.addEventListener('keydown', function (ev) {
++    var k = ev.keyCode;
++    if (k === 38) move(-1);
++    else if (k === 40) move(1);
++    else if (k === 37) move(-ROWS);
++    else if (k === 39) move(ROWS);
++    else if (k === 13) launch();
++    else if (k === 10009 || k === 27 || k === 8 || k === 461) {
++      try { tizen.application.getCurrentApplication().exit(); } catch (e) { say('Back pressed (exit only works on the TV).'); }
++    } else return;
++    ev.preventDefault();
++  });
++
++  load();
++}());
+diff --git a/tools/idlister/style.css b/tools/idlister/style.css
+new file mode 100644
+index 0000000..f9a5ec2
+--- /dev/null
++++ b/tools/idlister/style.css
+@@ -0,0 +1,13 @@
++html, body { margin: 0; width: 1920px; height: 1080px; background: #101418; color: #e8edf2; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
++#bar { height: 90px; line-height: 90px; padding: 0 60px; background: #1b222a; font-size: 30px; }
++#title { font-weight: bold; margin-right: 40px; }
++#count { color: #8fb4d9; margin-right: 40px; }
++#hint { color: #8a97a3; font-size: 24px; }
++#list { padding: 10px 40px 0; }
++.row { height: 56px; line-height: 56px; font-size: 28px; padding: 0 20px; white-space: nowrap; overflow: hidden; border-left: 8px solid transparent; }
++.row .nm { display: inline-block; width: 620px; overflow: hidden; vertical-align: top; }
++.row .id { display: inline-block; width: 760px; overflow: hidden; vertical-align: top; color: #9bb2c7; }
++.row .sh { display: inline-block; width: 140px; vertical-align: top; color: #6f7d8a; }
++.row.sel { background: #2a5d9f; border-left-color: #ffffff; }
++.row.sel .id, .row.sel .sh { color: #ffffff; }
++#status { position: absolute; left: 0; right: 0; bottom: 0; height: 70px; line-height: 70px; padding: 0 60px; background: #1b222a; font-size: 26px; color: #ffd37a; }

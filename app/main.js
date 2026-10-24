@@ -13,17 +13,21 @@
   var KEYS = { 37: 'left', 38: 'up', 39: 'right', 40: 'down', 13: 'ok', 27: 'back', 8: 'back', 10009: 'back', 461: 'back' };
   var FULL = 'Home holds nine apps. Remove one first.', LAST = 'Home needs one app';
 
+  /* Placeholder launch targets for TV inputs. Replace each appId with the real ID found by the
+     idlister test app (see tools/idlister). Until then a press shows the normal launch error. */
   var PRIMARY_APPS = [
-    { id: 'stremio', name: 'Stremio', mark: true, appId: 'IkWsFHtOY9.Stremio' },
-    { id: 'netflix', name: 'Netflix', mark: true, appId: 'org.tizen.netflix-app' },
-    { id: 'disneyplus', name: 'Disney+', mark: true, appId: 'MCmYXNxgcu.DisneyPlus' },
+    { id: 'livetv', name: 'Live TV', mark: true, appId: 'TODO.livetv' },
+    { id: 'hdmi1', name: 'HDMI 1', mark: true, appId: 'TODO.hdmi1' },
+    { id: 'hdmi2', name: 'HDMI 2', mark: true, appId: 'TODO.hdmi2' },
+    { id: 'hdmi3', name: 'HDMI 3', mark: true, appId: 'TODO.hdmi3' },
     { id: 'youtube', name: 'YouTube', mark: true, appId: '9Ur5IzDKqV.TizenYouTube' },
     { id: 'appletv', name: 'Apple TV', mark: true, appId: 'com.samsung.tv.aria-video' },
     { id: 'primevideo', name: 'Prime Video', mark: true, appId: 'org.tizen.primevideo' },
     { id: 'abciview', name: 'ABC iview', mark: true, appId: 'mWK87Xghap.ABCiview' },
-    { id: 'sbs', name: 'SBS On Demand', mark: true, appId: 'OyE7OuxlUi.SBSOnDemand' },
-    { id: 'applemusic', name: 'Apple Music', mark: true, appId: 'org.tizen.apple.apple-music' }
+    { id: 'sbs', name: 'SBS On Demand', mark: true, appId: 'OyE7OuxlUi.SBSOnDemand' }
   ];
+  /* Apps removed from Home. Saved preferences and the installed-app scan can never restore these. */
+  var REMOVED = ['stremio', 'netflix', 'disneyplus', 'IkWsFHtOY9.Stremio', 'org.tizen.netflix-app', 'MCmYXNxgcu.DisneyPlus'];
   var PRIMARY = PRIMARY_APPS.map(function (a) { return a.id; }), APPS = PRIMARY_APPS.slice(), ALPHA = [];
   var WALLS = window.CleanFrameWallpapers || [{ id: 'misty', name: 'Misty coast', tone: 'light', ut: { tr: 'mist', br: 'mist' }, frostVeil: .20 }];
   var ADAPTIVE_INK = window.CleanFrameAdaptiveInk || {};
@@ -330,16 +334,16 @@
     var s = saved && typeof saved === 'object' ? saved : {}, modern = s.look && typeof s.look === 'object' ? s.look : s;
     var legacyList = s.theme === 'list', h = [], recent = [], records = Array.isArray(s.appRecords) ? s.appRecords : [];
     records.slice(0, 256).forEach(function (a) {
-      if (!a || !safeId(a.id) || !safeId(a.appId) || typeof a.name !== 'string' || !a.name.trim() || app(a.id)) return;
+      if (!a || !safeId(a.id) || !safeId(a.appId) || REMOVED.indexOf(a.id) >= 0 || REMOVED.indexOf(a.appId) >= 0 || typeof a.name !== 'string' || !a.name.trim() || app(a.id)) return;
       APPS.push({ id: a.id, appId: a.appId, name: a.name.slice(0, 160), brand: ['hbomax', 'spotify', 'tubi'].indexOf(a.brand) >= 0 ? a.brand : '', mark: ['hbomax', 'spotify', 'tubi'].indexOf(a.brand) >= 0, icon: safeIcon(a.icon) });
     });
     (Array.isArray(s.home) ? s.home : Array.isArray(s.dock) ? s.dock : []).forEach(function (id) {
-      if (!safeId(id) || h.indexOf(id) >= 0 || h.length >= CAP) return;
+      if (!safeId(id) || REMOVED.indexOf(id) >= 0 || h.indexOf(id) >= 0 || h.length >= CAP) return;
       if (!app(id) && id.indexOf('.') > 0) APPS.push({ id: id, appId: id, name: id.split('.').pop(), mark: false });
       if (app(id)) h.push(id);
     });
     if (!h.length) h = PRIMARY.slice();
-    (Array.isArray(s.recent) ? s.recent : []).forEach(function (id) { if (safeId(id) && app(id) && h.indexOf(id) < 0 && recent.indexOf(id) < 0 && recent.length < 5) recent.push(id); });
+    (Array.isArray(s.recent) ? s.recent : []).forEach(function (id) { if (safeId(id) && REMOVED.indexOf(id) < 0 && app(id) && h.indexOf(id) < 0 && recent.indexOf(id) < 0 && recent.length < 5) recent.push(id); });
     return {
       bg: pick(modern.bg, LOOK_VALUES.bg, legacyList ? 'dark' : 'photo'), layout: pick(modern.layout, LOOK_VALUES.layout, legacyList ? 'list' : 'dock'),
       apps: pick(modern.apps, LOOK_VALUES.apps, legacyList ? 'text' : 'both'), controls: pick(modern.controls, LOOK_VALUES.controls, 'both'),
@@ -475,7 +479,7 @@
       ALPHA = [];
       entries.forEach(function (entry) {
         var id = PRIMARY.indexOf(entry.brand) >= 0 ? entry.brand : entry.appId, a;
-        if (!safeId(id) || !safeId(entry.appId) || ALPHA.indexOf(id) >= 0) return;
+        if (!safeId(id) || !safeId(entry.appId) || REMOVED.indexOf(id) >= 0 || REMOVED.indexOf(entry.appId) >= 0 || ALPHA.indexOf(id) >= 0) return;
         a = app(id);
         if (!a) { a = { id: id }; APPS.push(a); }
         a.appId = entry.appId; a.brand = entry.brand || ''; a.mark = !!entry.brand;
